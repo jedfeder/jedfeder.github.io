@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include nav.html %}
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+  {% include ga.html %}
+
+</html>
