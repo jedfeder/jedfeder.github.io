@@ -1,57 +1,39 @@
 body {
-  margin: 60px auto;
-  width: 60%;
-  font-family: 'Lato', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-  color: #999;
+.splash-image img {
+    max-width: 800px;
 }
 
-a:hover {
-  text-decoration: underline;
+
+.site-header {
+    padding: 1.714285714rem 0 0 0;
 }
 
-p, ul {
-  font-size: 1.5em;
-  line-height: 1.4em;
-  color: #333;
+.site-title,
+.site-description {
+
 }
 
-h1 {
-  font-size: 36px;
+#social_fb {margin:5px;width:32px;height:30px;background-image:url("/img/fb_32.png");float:right;background-repeat:no-repeat;}
+#social_fb:hover {background-position:-32px 0;}
+#social_twitter {margin:5px;width:32px;height:30px;background-image:url("/img/twitter_32.png");float:right;background-repeat:no-repeat;}
+#social_twitter:hover {background-position:-32px 0;}
+
+
+.nav-about {
+
 }
 
-h2 {
-  font-size: 18px;
+.nav-about:hover::before {
+    content: 'Dude, ';
+    color: red;
+    position: absolute;
+    left: -4px;
 }
-
-nav ul, footer ul {
-  font-size: 1em;
-  padding: 0px;
-  list-style: none;
-}
-
-nav ul li, footer ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-footer {
-  font-size: .8em;
-}
-
-/* Blog */
-ul.posts {
-  margin: 20px auto 40px;
-  font-size: 1.5em;
-}
-
-ul.posts li {
-  list-style: none;
-}
-
-.zack-splash {
-  width: 240px;
+.nav-about:hover::after {
+    content: '';
+    color: red;
 }

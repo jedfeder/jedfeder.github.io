@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  </head>
+---
+layout: skeleton
+include_nav: 1
+---
+{% include header.html %}
 
-  <body>
-    {% include nav.html %}
-
-    <div class="container">
+<div class="container-fluid">
+  <div class="row">
+    {% if page.include_nav %}
+    <div class="col-md-4">
+      {% include nav.html %}
+    </div>
+    {% endif %}
+    <div class="col-md-8">
       {{ content }}
     </div>
+  </div>
 
+  <div class="row">
     {% include footer.html %}
-  </body>
+  </div>
+</div>
 
-  {% include ga.html %}
-
-</html>
