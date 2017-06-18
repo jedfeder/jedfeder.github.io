@@ -1,17 +1,11 @@
 ---
 layout: skeleton
-include_nav: 1
 ---
 {% include header.html %}
 
 <div class="container-fluid">
   <div class="row">
-    {% if page.include_nav %}
-    <div class="col-md-4">
-      {% include nav.html %}
-    </div>
-    {% endif %}
-    <div class="col-md-8">
+    <div class="col-md-12">
       {{ content }}
     </div>
   </div>
