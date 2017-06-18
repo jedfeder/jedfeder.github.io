@@ -2229,6 +2229,7 @@ p.comment-form-comment {
 
 #colophon {
     clear: both;
+    margin-top: 24px;
 }
 #supplementary {
     border-top: 1px solid #ddd;
