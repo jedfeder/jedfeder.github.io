@@ -1,2 +1,3 @@
-# zackmoy.com
-me on the internet
+# jedfeder.com
+
+`bundle exec jekyll serve --incremental`
