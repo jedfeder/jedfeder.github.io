@@ -540,7 +540,7 @@ a:hover {
 #access {
 
 
-    overflow:hidden;
+    /*overflow:hidden;*/
     width: 100%;
     /*
     background: #222; /* Show a solid color for older browsers
