@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: font-family: 'Times New Roman',Georgia,Serif;
     font-variant: small-caps;
-    font-size: 100%;
+    /*font-size: 100%;*/
     font-style: inherit;
     font-weight: inherit;
     margin: 0;
@@ -476,6 +476,9 @@ a:active,
 a:hover {
     text-decoration: underline;
 }
+a:visited {
+    color: #1982d1;
+}
 
 /* Assistive text */
 .assistive-text {
@@ -595,7 +598,7 @@ a:hover {
 #access a {
     color: #000;
     display: block;
-    line-height: 3.333em;
+    /*line-height: 3.333em;*/
     padding: 0 1.2125em;
     text-decoration: none;
 }
@@ -635,7 +638,8 @@ a:hover {
 }
 #access li:hover > a,
 #access a:focus {
-    color: #773e8f;
+    color: #1982d1;
+    text-decoration: none;
     /*
     background: -moz-linear-gradient(#052e02, #0a0a0a);
     background: -o-linear-gradient(#052e02, #0a0a0a);
@@ -2408,7 +2412,8 @@ p.comment-form-comment {
     }
     #site-title a {
         font-size: 36px;
-                margin-right: 50px;
+        margin-right: 50px;
+        margin-left: 10px;
     }
     #access ul {
         font-size: 12px;
