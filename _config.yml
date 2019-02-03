@@ -1,3 +1,5 @@
 name: Jed Feder
 markdown: kramdown
 permalink: /posts/:year/:month/:day/:title
+
+theme: jekyll-theme-minimal
