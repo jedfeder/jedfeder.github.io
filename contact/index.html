@@ -11,7 +11,16 @@ title: Contact
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+  var submitted=false;
+  function onSubmit(token) {
+    document.getElementById("gform").submit();
+    $('#gform *').hide();
+    var h2 = document.createElement("h2");
+    h2.append("Thanks for reaching out — I'll get back to you soon")
+    $('#gform').prepend(h2);
+  }
+ </script>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeOCtfbInRgtM65tA1iw78EljuNESG8Ed-Er4PdQ9N3g1Tyrg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
@@ -35,16 +44,7 @@ title: Contact
     <div class="col-md-12 mb-3">
       <label for="entry.946414541">Message</label>
       <textarea class="form-control" rows="3" name="entry.946414541" id="entry.946414541" required></textarea><br>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LfbSZYUAAAAAKBQiRWHTDNb_7EBuuB9pEY2zpXf" data-callback='onSubmit'>Submit</button>
     </div>
   </div>
 </form>
-
-<script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-        $('#gform *').hide();
-        var h2 = document.createElement("h2");
-        h2.append("Thanks for reaching out — I'll get back to you soon")
-        $('#gform').prepend(h2);
-    });
-</script>
